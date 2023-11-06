@@ -26,7 +26,7 @@ const Home: NextPage = () => {
 
         try {
             
-            const toKey = new PublicKey("<Replace with your key>");
+            const toKey = new PublicKey("AkK8xMcHhDPBqwpyoCG7w6NZmZpJijn9Xo98ZPvzFzJr");
             const [escrowPDA] = await web3.PublicKey.findProgramAddress(
                 [utf8.encode('escrow'), anchorWallet.publicKey.toBuffer(), toKey.toBuffer()],
                 program.programId,
